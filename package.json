@@ -1,0 +1,13 @@
+{
+  "name": "grocery-management",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "build:css": "tailwindcss -i input/input.css -o output/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
