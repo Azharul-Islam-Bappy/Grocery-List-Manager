@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output/output.css" type="text/css" media="all" />
     <title>Grocery List Management</title>
+    <!-- some custom style -->
   </head>
   <body>
     
-    <div class="bg-gray-100 flex justify-between lg:rounded-2xl lg:w-[70%] mx-auto pe-1.5">
-      <input type="text" name="input-field" id="input-field" class="p-[1rem] border-0 outline-0 text-xl bg-transparent" placeholder="Enter Item" />
-      <button class="button text-xl font-medium me-[1rem]" type="button">Add</button>
+    <div class="bg-gray-100 drop-shadow drop-shadow-lg flex justify-between lg:rounded-2xl lg:w-[70%] mx-auto py-1.5 pe-1.5">
+      <input type="text" name="input-field" id="input-field" class="p-[1rem] border-none outline-none text-xl bg-transparent w-[70%]" placeholder="Enter Item" />
+      <button class="button bg-[#fff7cbd2] px-[2rem] rounded-2xl text-xl font-medium me-[1.5rem] drop-shadow drop-shadow-xl" id="addBtn" type="button">Add</button>
+      <button class="button text-xl drop-shadow drop-shadow-xl font-medium me-[2rem] rounded-2xl bg-[#ff5e5ec3] px-[2rem]" id="resetBtn" type="button">reset</button>
     </div>
-    <div class="item-container">
+    <div class="item-container mt-[2rem] px-[0.5rem] text-center text-xl">
       
     </div>
-    <script type="module" charset="utf-8"></script>
+    <script src="main.js" type="module" charset="utf-8"></script>
   </body>
 </html>

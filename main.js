@@ -10,6 +10,11 @@ const addBtn = document.querySelector("#addBtn");
 const resetBtn = document.querySelector("#resetBtn");
 const container = document.querySelector(".item-container");
 
+// class name adder 
+function addClass(elem,name) {
+  elem.classList.add(name);
+}
+
 // event handler 
 addBtn.addEventListener("click", () => {
   if (input.value === '') {
@@ -17,6 +22,8 @@ addBtn.addEventListener("click", () => {
   }
   else {
     addItem(input.value);
+    input.value = "";
+    input.placeholder = "Add Item";
     localStorage.setItem("item-list", JSON.stringify(groceryList));
     showList();
   }
@@ -36,7 +43,7 @@ function showList() {
     groceryList.forEach(elem => {
       let div = document.createElement('div');
       div.innerText = elem;
-      div.classList.add("item");
+      addClass(div,"item");
       container.appendChild(div)
     });
   }
