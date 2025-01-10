@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Azharul Bappy",
   "license": "ISC",
-  "description": ""
+  "description": "This is a grocery-management program written with HTML CSS and Javascript"
 }
